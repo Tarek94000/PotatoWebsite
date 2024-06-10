@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Recipe</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="/./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="main.html" class="logo-container">
+                <img class="logo" src="../img/logo.png" alt="Logo">
+                <img class="logo_text" src="../img/logo_text.png" alt="Potato Delights">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="types.html">Types of Potatoes</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="suggest.html">Suggest Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Request Your Recipe</h2>
+        <form id="recipe-request-form">
+            <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="recipe_name">Recipe Name:</label>
+                <input type="text" id="recipe_name" name="recipe_name" required>
+            </div>
+            <div>
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="4" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit Request</button>
+            </div>
+        </form>
+        <div id="confirmation-message" style="display: none; text-align: center; margin-top: 20px; width: 85%"> 
+            <img src="../img/logo.png" style="width: 500px; height: 400px; margin-right: 20px;" alt="Logo">
+            <p style="font-size: 1.9rem;">Thank you for submitting your recipe request! My dedicated self will come back to you by mail with a delicious response soon. Stay tuned and may your potatoes always be perfectly fried!</p>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="types.html">Types of Potatoes</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="suggest.html">Suggest Us</a></li>
+                <li><a href="about.html">About Us</a></li>  
+            </ul>
+        </nav>
+        <p>Copyright &copy; 2024 Potato Delights</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

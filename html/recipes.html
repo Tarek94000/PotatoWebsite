@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potato Recipes</title>
+    <title>Potato</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href="/./img/logo.png">
+    <link rel="icon" href="../img/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="../main.html">
-            <img class="logo" src="/./img/logo.png">
-            <img class="logo_text"src="/./img/logo_text.png">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="types.html">Types of Potatoes</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="About.html">About Us</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <a href="main.html" class="logo-container">
+                <img class="logo" src="../img/logo.png" alt="Logo">
+                <img class="logo_text" src="../img/logo_text.png" alt="Potato Delights">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="types.html">Types of Potatoes</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="suggest.html">Suggest Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <h2>Recipes</h2>
-        <section class="potato-list">
+
+        <input type="text" id="searchBar" placeholder="Search for recipes..." onkeyup="searchRecipes()">
+
+        <section class="potato-list" id="recipeList">
             <a href="recipes/mashed_potatoes.html" class="grid-item">
                 <article>
                     <img src="../img/recipes/mashed_potatoes.jpg" alt="Classic Mashed Potatoes" class="center-img">
@@ -47,17 +52,83 @@
                     <p>An excellent choice for picnics and barbecues, this potato salad is a tasty complement to grilled foods.</p>
                 </article>
             </a>
-            <a href="recipes/potato_cake.html"class="grid-item">
+            <a href="recipes/potato_cake.html" class="grid-item">
                 <article>
                     <img src="../img/recipes/potato_cake.png" alt="Potato Cake" class="center-img">
-                    <h3>Ham mashed potato cake</h3>
-                    <p>Crsipy and cheesy potatoe recipe for a delicious snack or apetizor!</p>
+                    <h3>Ham Mashed Potato Cake</h3>
+                    <p>Crispy and cheesy potato recipe for a delicious snack or appetizer!</p>
+                </article>
+            </a>
+            <a href="recipes/french_fries.html" class="grid-item">
+                <article>
+                    <img src="../img/recipes/french_fries.jpg" alt="French Fries" class="center-img">
+                    <h3>French Fries</h3>
+                    <p>Classic crispy French fries, perfect as a side dish or a snack.</p>
+                </article>
+            </a>
+            <a href="recipes/baked_potato.html" class="grid-item">
+                <article>
+                    <img src="../img/recipes/baked_potato.jpg" alt="Baked Potato" class="center-img">
+                    <h3>Baked Potato</h3>
+                    <p>A simple and satisfying baked potato, topped with butter, cheese, and chives.</p>
+                </article>
+            </a>
+            <a href="recipes/potato_gratin.html" class="grid-item">
+                <article>
+                    <img src="../img/recipes/potato_gratin.jpg" alt="Potato Gratin" class="center-img">
+                    <h3>Potato Gratin</h3>
+                    <p>A rich and creamy potato gratin, perfect for a special occasion.</p>
+                </article>
+            </a>
+            <a href="recipes/potato_soup.html" class="grid-item">
+                <article>
+                    <img src="../img/recipes/potato_soup.jpg" alt="Potato Soup" class="center-img">
+                    <h3>Potato Soup</h3>
+                    <p>A hearty and warming potato soup, great for cold days.</p>
+                </article>
+            </a>
+            <a href="recipes/potato_wedges.html" class="grid-item">
+                <article>
+                    <img src="../img/recipes/potato_wedges.jpg" alt="Potato Wedges" class="center-img">
+                    <h3>Potato Wedges</h3>
+                    <p>Seasoned potato wedges, crispy on the outside and fluffy on the inside.</p>
+                </article>
+            </a>
+            <a href="recipes/duchess_potatoes.html" class="grid-item">
+                <article>
+                    <img src="../img/recipes/duchess_potatoes.jpg" alt="Duchess Potatoes" class="center-img">
+                    <h3>Duchess Potatoes</h3>
+                    <p>Piped mashed potatoes that are baked until golden and crispy on the outside.</p>
+                </article>
+            </a>
+            <a href="recipes/potato_hash.html" class="grid-item">
+                <article>
+                    <img src="../img/recipes/potato_hash.jpeg" alt="Potato Hash" class="center-img">
+                    <h3>Potato Hash</h3>
+                    <p>A savory mix of potatoes, onions, and peppers, perfect for breakfast or brunch.</p>
+                </article>
+            </a>
+            <a href="recipes/potato_frittata.html" class="grid-item">
+                <article>
+                    <img src="../img/recipes/potato_frittata.jpg" alt="Potato Frittata" class="center-img">
+                    <h3>Potato Frittata</h3>
+                    <p>A delicious and easy-to-make potato frittata, great for any meal of the day.</p>
                 </article>
             </a>
         </section>
     </main>
     <footer>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="types.html">Types of Potatoes</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="suggest.html">Suggest Us</a></li>
+                <li><a href="about.html">About Us</a></li>  
+            </ul>
+        </nav>
         <p>Copyright &copy; 2024 Potato Delights</p>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>

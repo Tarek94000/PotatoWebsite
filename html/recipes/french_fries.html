@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roasted Potatoes</title>
+    <title>French Fries</title>
     <link rel="stylesheet" href="/../css/styles.css">
     <link rel="icon" href="/./img/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -27,8 +28,8 @@
         </div>
     </header>
     <main>
-        <h2 class="recipe">Classic Roasted Potatoes</h2>
-        <img src="../../img/recipes/roasted_potatoes.jpg" alt="Classic Roasted Potatoes" class="recipe-img">
+        <h2 class="recipe">Classic French Fries</h2>
+        <img src="../../img/recipes/french_fries.jpg" alt="Classic French Fries" class="recipe-img">
         
         <div class="recipe-info">
             <div>
@@ -37,15 +38,15 @@
             </div>
             <div>
                 <img src="../../img/prep-time.png" alt="Prep Time Icon" class="info-icon">
-                <p><strong>Prep Time:</strong> 10 minutes</p>
+                <p><strong>Prep Time:</strong> 15 minutes</p>
             </div>
             <div>
                 <img src="../../img/cook-time.png" alt="Cook Time Icon" class="info-icon">
-                <p><strong>Cook Time:</strong> 35 minutes</p>
+                <p><strong>Cook Time:</strong> 25 minutes</p>
             </div>
         </div>
 
-        <p>Crispy on the outside and fluffy on the inside, these classic roasted potatoes are the perfect side dish for any meal. Simple to prepare and incredibly satisfying, they will become a staple in your kitchen.</p>
+        <p>There's nothing quite like a batch of homemade French fries. Crispy on the outside, soft on the inside, these fries are perfect as a side dish or a snack.</p>
 
         <button class="toggle-ingredients" onclick="toggleIngredients()">
             <span class="arrow right"></span>
@@ -59,28 +60,16 @@
                     <th>Amount</th>
                 </tr>
                 <tr>
-                    <td>Potatoes (Russet or Yukon Gold)</td>
-                    <td>2 pounds</td>
+                    <td>Potatoes (Russet)</td>
+                    <td>4 large</td>
                 </tr>
                 <tr>
-                    <td>Olive oil</td>
-                    <td>1/4 cup</td>
-                </tr>
-                <tr>
-                    <td>Garlic, minced</td>
-                    <td>4 cloves</td>
+                    <td>Vegetable oil</td>
+                    <td>For frying</td>
                 </tr>
                 <tr>
                     <td>Salt</td>
-                    <td>1 teaspoon</td>
-                </tr>
-                <tr>
-                    <td>Freshly ground black pepper</td>
-                    <td>1/2 teaspoon</td>
-                </tr>
-                <tr>
-                    <td>Fresh rosemary, chopped (optional)</td>
-                    <td>1 tablespoon</td>
+                    <td>To taste</td>
                 </tr>
             </table>
         </div>
@@ -92,12 +81,14 @@
 
         <div class="steps_div hidden">
             <ol class="instructions">
-                <li>Preheat your oven to 425°F (220°C).</li>
-                <li>Peel the potatoes if desired, and cut them into evenly sized chunks. Rinse under cold water and pat dry with a towel.</li>
-                <li>In a large bowl, toss the potatoes with olive oil, garlic, salt, and pepper until evenly coated. Add rosemary if using.</li>
-                <li>Spread the potatoes in a single layer on a baking sheet.</li>
-                <li>Roast in the preheated oven for 25-35 minutes, or until the potatoes are golden brown and crispy, flipping them halfway through cooking.</li>
-                <li>Serve hot, garnished with additional rosemary if desired.</li>
+                <li>Peel the potatoes and cut them into thin strips.</li>
+                <li>Place the potato strips in a bowl of cold water and let them soak for at least 30 minutes. This helps to remove excess starch and makes the fries crispier.</li>
+                <li>Drain the potatoes and pat them dry with a clean towel.</li>
+                <li>Heat the vegetable oil in a deep fryer or large pot to 350°F (175°C).</li>
+                <li>Fry the potatoes in batches for about 3-4 minutes until they are pale and soft. Remove them with a slotted spoon and let them drain on paper towels.</li>
+                <li>Increase the oil temperature to 375°F (190°C). Fry the potatoes again in batches for another 2-3 minutes until they are golden and crispy.</li>
+                <li>Remove the fries with a slotted spoon and drain on paper towels. Season with salt while they are still hot.</li>
+                <li>Serve immediately and enjoy!</li>
             </ol>
         </div>
         
@@ -108,18 +99,18 @@
 
         <div class="wgw_div hidden">
             <ul class="whatgoes">
-                <li>Roast chicken or turkey</li>
-                <li>Grilled or roasted beef</li>
-                <li>Vegetarian options like grilled vegetables or tofu</li>
-                <li>Grilled fish or seafood</li>
+                <li>Burgers</li>
+                <li>Grilled sandwiches</li>
+                <li>Hot dogs</li>
+                <li>Chicken wings</li>
             </ul>
         </div>
 
         <div class="fun-fact-container">
             <img src="/./img/logo.png" alt="Potato Logo" class="fun-fact-logo">
-            <p class="fun-fact-text"><b>Did you know ?</b> Roasted potatoes have been enjoyed for centuries and were a favorite dish of King Louis XVI of France. The king loved them so much that he popularized their consumption across Europe. So, when you enjoy roasted potatoes, you're indulging in a dish fit for royalty!</p>
+            <p class="fun-fact-text"><b>Did you know?</b> French fries, despite their name, are believed to have originated in Belgium. They became popular in the United States during World War I when American soldiers were introduced to them. Now, they are one of the most beloved snacks worldwide!</p>
         </div>        
-        
+
         <div class="you-may-also-like">
             <h3>You May Also Like...</h3>
             <div class="potato-list" id="randomRecipeList"></div>

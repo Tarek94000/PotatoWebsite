@@ -1,4 +1,10 @@
 /* Common Styles */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -6,48 +12,59 @@ body {
     background: #f4f4f4 url('../img/background.png');
     background-size: 20%;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Header styles */
 header {
     font-family: 'Luckiest Guy';
     position: fixed;
     width: 100%;
     background: rgba(246, 209, 103, 255);
     padding: 15px;
-    text-align: center;
     box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
     z-index: 10;
     top: 0;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
 
 .logo {
+    padding-left: 20px;
     width: 80px;
     height: 70px;
 }
 
 .logo_text {
-    width: 500px;
-}
-
-a {
-    text-decoration: none;
+    width: 500px; /* Adjust the width as needed */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 40px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
@@ -55,7 +72,59 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #333;
+    color: #000000;
+}
+
+
+main {
+    background-color: rgba(255, 255, 255, 0.89);
+    border-color: grey;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 130px;
+    padding-bottom: 40px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 0px rgba(255, 255, 255, 0.048);
+    font-size: 0.5rem; 
+}
+
+footer nav ul li {
+    margin: 0 30px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer p {
+    margin: 10px 0 0;
 }
 
 main h2 {
@@ -63,9 +132,10 @@ main h2 {
     font-size: 4rem;
     margin-bottom: 35px;
     margin-top: 20px;
-    color: #f33244;
+    color: #f33745;
     text-align: center;
-    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.199);
+    flex: 1;
 }
 
 main img.recipe-img {
@@ -86,15 +156,54 @@ main p {
     color: #555;
 }
 
-table {
+/* Recipe Information Styles */
+.recipe-info {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     max-width: 800px;
-    border-collapse: collapse;
     margin: 20px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
 }
 
-table, th, td {
+.recipe-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-icon {
+    width: auto;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+.recipe-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+
+/*////////////////////////////////////////////////*/
+
+
+/*table*/
+
+table {
+    width: 700px;
+    max-width: 1000px; /* Increase the max-width for a larger table */
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
     border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; /* Needed to make the border-radius work on the table */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem; /* Adjust font size for readability */
 }
 
 th, td {
@@ -103,30 +212,26 @@ th, td {
 }
 
 th {
-    background-color: #f4f4f4;
+    background-color: #f8d464; /* Matches the yellow from your header */
+    color: #fff; /* White text color */
     font-weight: bold;
+    border-bottom: 2px solid #f33745; /* Adds a border under the header row */
+}
+
+td {
+    border-bottom: 1px solid #eee;
 }
 
 tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:nth-child(odd) {
-    background-color: #eeeeee;
+    background-color: #f4f4f4; /* Light gray for even rows */
 }
 
 tr:hover {
-    background-color: #e9e9e9;
+    background-color: #e9e9e9; /* Slightly darker gray on hover */
 }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: white;
-    margin-top: 40px;
-    font-size: 0.9rem;
-}
+/*////////////////////////////////////////////////*/
+
 
 /* Grid Layout for Potato Lists */
 .potato-list {
@@ -166,55 +271,43 @@ footer {
     border-radius: 10px;
 }
 
-.potato-list h3 {
-    color: #333;
+.potato-list h3 {  
+    font-family: 'Luckiest Guy';
+    color: #f33745;
 }
 
 .potato-list p {
     color: #666;
+    font-size: 1.2rem;
+}
+
+/*////////////////////////////////////////////////*/
+
+/* Search Bar */
+#searchBar {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    display: block;
     font-size: 16px;
-}
-
-.WGW {
-    background-color: #e7e7e7;
-    border-color: grey;
-    border-radius: 15px;
-    border: 1px solid #ddd;
+    border: 2px solid #ccc;
+    border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 1000px;
-    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.WGW h3 {
-    text-align: center;
+#searchBar:focus {
+    border-color: #f33745;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
 }
 
-main {
-    background-color: rgba(255, 255, 255, 0.89);
-    border-color: grey;
-    border-radius: 15px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 1100px;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 170px;
-}
+/*////////////////////////////////////////////////*/
 
-#slogan {
-    font-style: italic;
-}
-
+/* Ingeredients,Instructions*/
 .instructions {
     max-width: 1000px;
-    margin-bottom: 100px;
     font-size: larger;
     list-style: none; /* Remove default list styling */
     padding-left: 0; /* Remove default padding */
@@ -256,9 +349,10 @@ main {
 .recipe_step {
     box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1);
     text-align: left;
+    width: 100%;
+    margin: 10px;
 }
 
-/* styles.css */
 .container {
     display: flex;
     justify-content: center;
@@ -274,23 +368,254 @@ main {
 }
 
 .visible {
-    max-height: 1000px; /* Adjust based on the expected max height of the section */
+    max-height: 1000px;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 
-.toggle-ingredients, .toggle-steps {
+.arrow {
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    margin-right: 10px;
+    vertical-align: middle;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.arrow.right {
+    border-top: 8px solid black;
+}
+
+.arrow.down {
+    border-top: none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid black;
+}
+
+.toggle-ingredients, .toggle-steps, .toggle-wgw {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     border-radius: 15px;
     border: white;
     background-color: white;
     color: rgba(246, 209, 103, 255);
-    cursor: pointer;
     font-size: 2rem;
+    width: 90%;
+    margin: 20px 0;
+    padding: 10px;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.toggle-ingredients:hover, .toggle-steps:hover, .toggle-wgw:hover {
+    background-color: #f1f1f1;
+    transform: translatex(5px);
+}
+
+.wgw_div {
+    max-width: 1000px;
+    font-size: larger;
+    list-style: none; /* Remove default list styling */
+    padding-left: 0; /* Remove default padding */
+}
+
+.wgw_div ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.wgw_div li {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+.wgw_div li::before {
+    content: "";
+    background-color: #f33745; /* Red dot color */
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+
+/*////////////////////////////////////////////////*/
+
+
+/* You May Also Like section */
+.you-may-also-like {
+    background-color: #f9f9f9;
+    border: 2px solid #f8d464;
+    border-radius: 15px;
+    padding: 20px; /* Reduced padding for a tighter fit */
+    max-width: 1200px; /* Increased max-width */
+    width: 90%;
+    margin-top: 20px; /* Reduced margin-top to decrease gap */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.you-may-also-like h3 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #f33745;
+    margin-bottom: 15px; /* Adjusted margin-bottom */
+    font-size: 2.5rem; /* Increased font size */
+}
+
+.you-may-also-like .potato-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Gap between items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.you-may-also-like .potato-list .grid-item {
+    width: 30%; /* Ensure three items in a row */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.you-may-also-like .potato-list img {
+    width: 100%; /* Ensure images fit within the container */
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensure images are cropped to fit the container */
+    border-radius: 10px; /* Consistent with the overall design */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.you-may-also-like .potato-list h3 {
+    font-size: 1.5rem; /* Increased font size for titles */
+    margin-top: 10px;
+}
+
+.you-may-also-like .potato-list p {
+    font-size: 1.2rem; /* Increased font size for descriptions */
+    color: #555;
+}
+
+
+
+/*////////////////////////////////////////////////*/
+
+/*SUGGEST US*/
+
+
+form {
+    color:#000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    background-color: #f8d464;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+form div {
+    margin-bottom: 15px;
     width: 90%;
 }
 
-.toggle-ingredients:hover, .toggle-steps:hover {
-    background-color: #f1f1f1;
-    transition: transform 0.2s, background-color 0.2s;
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
+form input, form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    font-family: 'Luckiest Guy';
+    padding: 10px 20px;
+    background-color: #f33745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(139, 0, 0);
+}
+
+/*////////////////////////////////////*/
+
+.about-section {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.89);
+    padding: 20px;
+    text-align: left;
+}
+
+.member {
+    margin-bottom: 80px;
+
+}
+
+.member h3 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.member p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.additional-info h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.additional-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+
+.fun-fact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.89);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fun-fact-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.fun-fact-text {
+    font-size: 1.2rem;
+    color: #555;
+    flex: 1;
+    text-align: left;
 }
