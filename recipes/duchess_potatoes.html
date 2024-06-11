@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duchess Potatoes</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="/./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../main.html" class="logo-container">
+                <img class="logo" src="/../img/logo.png" alt="Logo">
+                <img class="logo_text" src="/../img/logo_text.png" alt="Potato Delights">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../main.html">Home</a></li>
+                    <li><a href="../types.html">Types of Potatoes</a></li>
+                    <li><a href="../recipes.html">Recipes</a></li>
+                    <li><a href="../suggest.html">Suggest Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2 class="recipe">Duchess Potatoes</h2>
+        <img src="../../img/recipes/duchess_potatoes.jpg" alt="Duchess Potatoes" class="recipe-img">
+        
+        <div class="recipe-info">
+            <div>
+                <img src="../../img/serving.png" alt="Servings Icon" class="info-icon">
+                <p><strong>Servings:</strong> 6 people</p>
+            </div>
+            <div>
+                <img src="../../img/prep-time.png" alt="Prep Time Icon" class="info-icon">
+                <p><strong>Prep Time:</strong> 20 minutes</p>
+            </div>
+            <div>
+                <img src="../../img/cook-time.png" alt="Cook Time Icon" class="info-icon">
+                <p><strong>Cook Time:</strong> 30 minutes</p>
+            </div>
+        </div>
+
+        <p>Duchess potatoes are an elegant and delicious way to serve mashed potatoes. These beautifully piped, golden-brown potatoes are perfect for special occasions.</p>
+
+        <button class="toggle-ingredients" onclick="toggleIngredients()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">Ingredients</h3>
+        </button>
+
+        <div class="ingredients_div hidden">
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Potatoes (Yukon Gold or Russet)</td>
+                    <td>2 pounds, peeled and quartered</td>
+                </tr>
+                <tr>
+                    <td>Butter</td>
+                    <td>1/2 cup</td>
+                </tr>
+                <tr>
+                    <td>Heavy cream</td>
+                    <td>1/4 cup</td>
+                </tr>
+                <tr>
+                    <td>Egg yolks</td>
+                    <td>3 large</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>1 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Black pepper</td>
+                    <td>1/2 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Nutmeg (optional)</td>
+                    <td>1/4 teaspoon</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="toggle-steps" onclick="toggleSteps()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">Instructions</h3>
+        </button>
+
+        <div class="steps_div hidden">
+            <ol class="instructions">
+                <li>Preheat your oven to 400°F (200°C) and line a baking sheet with parchment paper.</li>
+                <li>Place the potatoes in a large pot of salted water. Bring to a boil, then reduce to a simmer and cook until the potatoes are tender, about 15-20 minutes. Drain well.</li>
+                <li>While the potatoes are still hot, pass them through a potato ricer or mash them until smooth.</li>
+                <li>In a saucepan, heat the butter and heavy cream until the butter is melted. Stir this mixture into the mashed potatoes until well combined.</li>
+                <li>Mix in the egg yolks, one at a time, until fully incorporated. Add salt, pepper, and nutmeg (if using).</li>
+                <li>Transfer the potato mixture to a piping bag fitted with a large star tip. Pipe the potatoes into swirls or rosettes onto the prepared baking sheet.</li>
+                <li>Bake in the preheated oven for 20-25 minutes, or until the potatoes are golden brown.</li>
+                <li>Serve immediately and enjoy!</li>
+            </ol>
+        </div>
+        
+        <button class="toggle-wgw" onclick="toggleWGW()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">What goes well with this dish ?</h3>
+        </button>
+
+        <div class="wgw_div hidden">
+            <ul class="whatgoes">
+                <li>Roast beef</li>
+                <li>Lamb chops</li>
+                <li>Grilled chicken</li>
+                <li>Steamed vegetables</li>
+            </ul>
+        </div>
+
+        <div class="fun-fact-container">
+            <img src="/./img/logo.png" alt="Potato Logo" class="fun-fact-logo">
+            <p class="fun-fact-text"><b>Did you know?</b> Duchess potatoes, originating from France, are mashed potatoes piped into fancy shapes and baked until golden. These elegant potatoes were first served to French royalty, making them a truly regal side dish!</p>
+        </div>        
+
+        <div class="you-may-also-like">
+            <h3>You May Also Like...</h3>
+            <div class="potato-list" id="randomRecipeList"></div>
+        </div>        
+    </main>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../main.html">Home</a></li>
+                <li><a href="../types.html">Types of Potatoes</a></li>
+                <li><a href="../recipes.html">Recipes</a></li>
+                <li><a href="../suggest.html">Suggest Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &copy; 2024 Potato Delights</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

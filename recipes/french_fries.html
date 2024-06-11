@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Fries</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="/./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../main.html" class="logo-container">
+                <img class="logo" src="/../img/logo.png" alt="Logo">
+                <img class="logo_text" src="/../img/logo_text.png" alt="Potato Delights">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../main.html">Home</a></li>
+                    <li><a href="../types.html">Types of Potatoes</a></li>
+                    <li><a href="../recipes.html">Recipes</a></li>
+                    <li><a href="../suggest.html">Suggest Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2 class="recipe">Classic French Fries</h2>
+        <img src="../../img/recipes/french_fries.jpg" alt="Classic French Fries" class="recipe-img">
+        
+        <div class="recipe-info">
+            <div>
+                <img src="../../img/serving.png" alt="Servings Icon" class="info-icon">
+                <p><strong>Servings:</strong> 4 people</p>
+            </div>
+            <div>
+                <img src="../../img/prep-time.png" alt="Prep Time Icon" class="info-icon">
+                <p><strong>Prep Time:</strong> 15 minutes</p>
+            </div>
+            <div>
+                <img src="../../img/cook-time.png" alt="Cook Time Icon" class="info-icon">
+                <p><strong>Cook Time:</strong> 25 minutes</p>
+            </div>
+        </div>
+
+        <p>There's nothing quite like a batch of homemade French fries. Crispy on the outside, soft on the inside, these fries are perfect as a side dish or a snack.</p>
+
+        <button class="toggle-ingredients" onclick="toggleIngredients()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">Ingredients</h3>
+        </button>
+
+        <div class="ingredients_div hidden">
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Potatoes (Russet)</td>
+                    <td>4 large</td>
+                </tr>
+                <tr>
+                    <td>Vegetable oil</td>
+                    <td>For frying</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>To taste</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="toggle-steps" onclick="toggleSteps()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">Instructions</h3>
+        </button>
+
+        <div class="steps_div hidden">
+            <ol class="instructions">
+                <li>Peel the potatoes and cut them into thin strips.</li>
+                <li>Place the potato strips in a bowl of cold water and let them soak for at least 30 minutes. This helps to remove excess starch and makes the fries crispier.</li>
+                <li>Drain the potatoes and pat them dry with a clean towel.</li>
+                <li>Heat the vegetable oil in a deep fryer or large pot to 350°F (175°C).</li>
+                <li>Fry the potatoes in batches for about 3-4 minutes until they are pale and soft. Remove them with a slotted spoon and let them drain on paper towels.</li>
+                <li>Increase the oil temperature to 375°F (190°C). Fry the potatoes again in batches for another 2-3 minutes until they are golden and crispy.</li>
+                <li>Remove the fries with a slotted spoon and drain on paper towels. Season with salt while they are still hot.</li>
+                <li>Serve immediately and enjoy!</li>
+            </ol>
+        </div>
+        
+        <button class="toggle-wgw" onclick="toggleWGW()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">What goes well with this dish ?</h3>
+        </button>
+
+        <div class="wgw_div hidden">
+            <ul class="whatgoes">
+                <li>Burgers</li>
+                <li>Grilled sandwiches</li>
+                <li>Hot dogs</li>
+                <li>Chicken wings</li>
+            </ul>
+        </div>
+
+        <div class="fun-fact-container">
+            <img src="/./img/logo.png" alt="Potato Logo" class="fun-fact-logo">
+            <p class="fun-fact-text"><b>Did you know?</b> French fries, despite their name, are believed to have originated in Belgium. They became popular in the United States during World War I when American soldiers were introduced to them. Now, they are one of the most beloved snacks worldwide!</p>
+        </div>        
+
+        <div class="you-may-also-like">
+            <h3>You May Also Like...</h3>
+            <div class="potato-list" id="randomRecipeList"></div>
+        </div>        
+    </main>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../main.html">Home</a></li>
+                <li><a href="../types.html">Types of Potatoes</a></li>
+                <li><a href="../recipes.html">Recipes</a></li>
+                <li><a href="../suggest.html">Suggest Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &copy; 2024 Potato Delights</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

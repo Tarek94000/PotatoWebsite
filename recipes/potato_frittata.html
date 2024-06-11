@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Frittata</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="/./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../main.html" class="logo-container">
+                <img class="logo" src="/../img/logo.png" alt="Logo">
+                <img class="logo_text" src="/../img/logo_text.png" alt="Potato Delights">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../main.html">Home</a></li>
+                    <li><a href="../types.html">Types of Potatoes</a></li>
+                    <li><a href="../recipes.html">Recipes</a></li>
+                    <li><a href="../suggest.html">Suggest Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2 class="recipe">Classic Potato Frittata</h2>
+        <img src="../../img/recipes/potato_frittata.jpg" alt="Classic Potato Frittata" class="recipe-img">
+        
+        <div class="recipe-info">
+            <div>
+                <img src="../../img/serving.png" alt="Servings Icon" class="info-icon">
+                <p><strong>Servings:</strong> 4 people</p>
+            </div>
+            <div>
+                <img src="../../img/prep-time.png" alt="Prep Time Icon" class="info-icon">
+                <p><strong>Prep Time:</strong> 10 minutes</p>
+            </div>
+            <div>
+                <img src="../../img/cook-time.png" alt="Cook Time Icon" class="info-icon">
+                <p><strong>Cook Time:</strong> 25 minutes</p>
+            </div>
+        </div>
+
+        <p>This classic potato frittata is a versatile and delicious dish that's perfect for breakfast, brunch, or even dinner. It's easy to make and can be customized with your favorite vegetables and cheeses.</p>
+
+        <button class="toggle-ingredients" onclick="toggleIngredients()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">Ingredients</h3>
+        </button>
+
+        <div class="ingredients_div hidden">
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Potatoes (Yukon Gold or Russet)</td>
+                    <td>2 large, peeled and diced</td>
+                </tr>
+                <tr>
+                    <td>Olive oil</td>
+                    <td>2 tablespoons</td>
+                </tr>
+                <tr>
+                    <td>Onion, chopped</td>
+                    <td>1 medium</td>
+                </tr>
+                <tr>
+                    <td>Bell pepper, chopped</td>
+                    <td>1 medium</td>
+                </tr>
+                <tr>
+                    <td>Eggs</td>
+                    <td>6 large</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>1/4 cup</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>1/2 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Black pepper</td>
+                    <td>1/4 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Cheddar cheese, grated</td>
+                    <td>1/2 cup</td>
+                </tr>
+                <tr>
+                    <td>Fresh parsley, chopped (optional)</td>
+                    <td>2 tablespoons</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="toggle-steps" onclick="toggleSteps()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">Instructions</h3>
+        </button>
+
+        <div class="steps_div hidden">
+            <ol class="instructions">
+                <li>Preheat your oven to 375°F (190°C).</li>
+                <li>In a large oven-safe skillet, heat the olive oil over medium heat.</li>
+                <li>Add the diced potatoes and cook until they start to soften, about 10 minutes.</li>
+                <li>Add the chopped onion and bell pepper to the skillet and cook until the vegetables are tender, about 5 minutes more.</li>
+                <li>In a bowl, whisk together the eggs, milk, salt, and black pepper. Pour the egg mixture over the vegetables in the skillet.</li>
+                <li>Cook on the stovetop until the edges begin to set, about 5 minutes.</li>
+                <li>Sprinkle the grated cheddar cheese over the top and transfer the skillet to the preheated oven. Bake until the frittata is fully set and golden brown, about 10-15 minutes.</li>
+                <li>Remove from the oven and let cool slightly before slicing. Garnish with fresh parsley if desired.</li>
+                <li>Serve warm and enjoy!</li>
+            </ol>
+        </div>
+        
+        <button class="toggle-wgw" onclick="toggleWGW()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">What goes well with this dish ?</h3>
+        </button>
+
+        <div class="wgw_div hidden">
+            <ul class="whatgoes">
+                <li>Fresh salad</li>
+                <li>Grilled vegetables</li>
+                <li>Crusty bread</li>
+                <li>Fresh fruit</li>
+            </ul>
+        </div>
+
+        <div class="fun-fact-container">
+            <img src="/./img/logo.png" alt="Potato Logo" class="fun-fact-logo">
+            <p class="fun-fact-text"><b>Did you know?</b> The potato frittata, a beloved Italian dish, was historically a way to repurpose leftovers. In Italian kitchens, no food was wasted, and the frittata became a perfect vehicle for turning yesterday's dinner into a delicious meal. This versatile dish highlights the Italian ingenuity in creating tasty, sustainable food from humble ingredients!</p>
+        </div>        
+        
+        <div class="you-may-also-like">
+            <h3>You May Also Like...</h3>
+            <div class="potato-list" id="randomRecipeList"></div>
+        </div>        
+    </main>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../main.html">Home</a></li>
+                <li><a href="../types.html">Types of Potatoes</a></li>
+                <li><a href="../recipes.html">Recipes</a></li>
+                <li><a href="../suggest.html">Suggest Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &copy; 2024 Potato Delights</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

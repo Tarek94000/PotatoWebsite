@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Cake</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="/./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../main.html" class="logo-container">
+                <img class="logo" src="/../img/logo.png" alt="Logo">
+                <img class="logo_text" src="/../img/logo_text.png" alt="Potato Delights">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../main.html">Home</a></li>
+                    <li><a href="../types.html">Types of Potatoes</a></li>
+                    <li><a href="../recipes.html">Recipes</a></li>
+                    <li><a href="../suggest.html">Suggest Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2 class="recipe">Potato Cakes</h2>
+        <img src="../../img/recipes/potato_cake.png" alt="Potato Cakes" class="recipe-img">
+        
+        <div class="recipe-info">
+            <div>
+                <img src="../../img/serving.png" alt="Servings Icon" class="info-icon">
+                <p><strong>Servings:</strong> 4 people</p>
+            </div>
+            <div>
+                <img src="../../img/prep-time.png" alt="Prep Time Icon" class="info-icon">
+                <p><strong>Prep Time:</strong> 15 minutes</p>
+            </div>
+            <div>
+                <img src="../../img/cook-time.png" alt="Cook Time Icon" class="info-icon">
+                <p><strong>Cook Time:</strong> 10 minutes</p>
+            </div>
+        </div>
+
+        <p>Golden, crispy potato cakes are a delicious way to use up leftover mashed potatoes. Perfect as a side dish or a light meal, these cakes are easy to make and incredibly satisfying.</p>
+
+        <button class="toggle-ingredients" onclick="toggleIngredients()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">Ingredients</h3>
+        </button>
+
+        <div class="ingredients_div hidden">
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Mashed potatoes</td>
+                    <td>2 cups</td>
+                </tr>
+                <tr>
+                    <td>All-purpose flour</td>
+                    <td>1/2 cup</td>
+                </tr>
+                <tr>
+                    <td>Green onions, chopped</td>
+                    <td>1/4 cup</td>
+                </tr>
+                <tr>
+                    <td>Egg</td>
+                    <td>1 large</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>1/2 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Black pepper</td>
+                    <td>1/4 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Vegetable oil</td>
+                    <td>For frying</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="toggle-steps" onclick="toggleSteps()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">Instructions</h3>
+        </button>
+
+        <div class="steps_div hidden">
+            <ol class="instructions">
+                <li>In a large bowl, combine mashed potatoes, flour, green onions, egg, salt, and black pepper. Mix until well combined.</li>
+                <li>Heat vegetable oil in a large skillet over medium heat.</li>
+                <li>Form the potato mixture into patties, about 1/2 inch thick.</li>
+                <li>Fry the patties in the hot oil until golden brown and crispy, about 3-4 minutes per side.</li>
+                <li>Transfer the potato cakes to a paper towel-lined plate to drain excess oil.</li>
+                <li>Serve hot, garnished with additional green onions if desired.</li>
+            </ol>
+        </div>
+        
+        <button class="toggle-wgw" onclick="toggleWGW()">
+            <span class="arrow right"></span>
+            <h3 class="recipe_step">What goes well with this dish ?</h3>
+        </button>
+
+        <div class="wgw_div hidden">
+            <ul class="whatgoes">
+                <li>Scrambled eggs</li>
+                <li>Grilled vegetables</li>
+                <li>Sour cream or Greek yogurt</li>
+                <li>Fresh salad</li>
+            </ul>
+        </div>
+
+        <div class="fun-fact-container">
+            <img src="/./img/logo.png" alt="Potato Logo" class="fun-fact-logo">
+            <p class="fun-fact-text"><b>Did you know?</b> Potato cakes, also known as boxty in Ireland, have a rich history dating back to the Irish famine of the 1840s. These cakes were made to stretch meager food supplies, combining grated and mashed potatoes to create a hearty, filling dish. Boxty even inspired a traditional Irish rhyme: "Boxty on the griddle, boxty in the pan, if you can't make boxty, you'll never get a man!"</p>
+        </div>             
+
+        <div class="you-may-also-like">
+            <h3>You May Also Like...</h3>
+            <div class="potato-list" id="randomRecipeList"></div>
+        </div>        
+    </main>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../main.html">Home</a></li>
+                <li><a href="../types.html">Types of Potatoes</a></li>
+                <li><a href="../recipes.html">Recipes</a></li>
+                <li><a href="../suggest.html">Suggest Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &copy; 2024 Potato Delights</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
